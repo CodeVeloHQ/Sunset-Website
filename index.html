@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CodeVelo — Sunset Notice (Operations Concluded)</title>
+  <meta name="description" content="Official sunset notice for CodeVelo (CodeVelo.dev LLC). Operations have concluded and active services have been discontinued." />
+  <meta name="robots" content="noindex, nofollow" />
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS via CDN (Zero build step required) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          colors: {
+            obsidian: '#090d16',
+            surface: '#0f1624',
+            borderSubtle: 'rgba(148, 163, 184, 0.12)',
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    /* Subtle developer grid pattern & radial glow */
+    body {
+      background-color: #090d16;
+      color: #f8fafc;
+      background-image:
+        radial-gradient(circle at 50% 0%, rgba(56, 189, 248, 0.10) 0%, rgba(99, 102, 241, 0.05) 35%, transparent 70%),
+        linear-gradient(to right, rgba(148, 163, 184, 0.04) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(148, 163, 184, 0.04) 1px, transparent 1px);
+      background-size: 100% 100%, 40px 40px, 40px 40px;
+      background-position: center top, center center, center center;
+    }
+
+    /* Smooth glass card elevation */
+    .glass-card {
+      background: linear-gradient(180deg, rgba(15, 22, 36, 0.85) 0%, rgba(11, 16, 27, 0.92) 100%);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(148, 163, 184, 0.12);
+      box-shadow: 0 20px 40px -20px rgba(0, 0, 0, 0.7), inset 0 1px 0 0 rgba(255, 255, 255, 0.05);
+    }
+
+    .glass-card:hover {
+      border-color: rgba(56, 189, 248, 0.25);
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between antialiased selection:bg-cyan-500/30 selection:text-cyan-200">
+
+  <!-- Top Navigation / Brand Header -->
+  <header class="w-full max-w-5xl mx-auto px-6 pt-8 sm:pt-12 flex items-center justify-between">
+    <div class="flex items-center gap-3.5">
+      <!-- 
+        =======================================================================
+        BRAND ASSET SLOT:
+        Copy your logo files from:
+        C:\Users\chris\OneDrive\Documents\Projects\CodeVelo\CodeVelo-Assets\assets\brand
+        into your deployment folder at:
+        ./assets/brand/logo.svg (or update the src below to logo.png / mark.svg)
+        If the file is not present yet, the inline SVG fallback renders seamlessly.
+        =======================================================================
+      -->
+      <div class="relative flex items-center justify-center w-10 h-10 rounded-xl bg-slate-900/90 border border-slate-700/60 shadow-inner overflow-hidden">
+        <img
+          src="./assets/brand/logo.svg"
+          alt="CodeVelo Logo"
+          class="w-6 h-6 object-contain"
+          onerror="this.style.display='none'; document.getElementById('codevelo-fallback-mark').style.display='block';"
+        />
+        <!-- Fallback Inline SVG Mark for CodeVelo -->
+        <svg
+          id="codevelo-fallback-mark"
+          style="display: none;"
+          class="w-6 h-6 text-cyan-400"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+        >
+          <path d="M8.5 7L3.5 12L8.5 17" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M13.5 6L18.5 17L21 11.5" stroke="#818cf8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </div>
+
+      <div class="flex flex-col">
+        <span class="text-lg font-semibold tracking-tight text-white leading-none">
+          Code<span class="text-cyan-400">Velo</span>
+        </span>
+        <span class="font-mono text-[11px] text-slate-400 tracking-wider uppercase mt-1">
+          codevelo.dev
+        </span>
+      </div>
+    </div>
+
+    <!-- Subtle Domain Expiration Indicator -->
+    <div class="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-900/80 border border-slate-800 text-xs font-mono text-slate-400">
+      <span class="w-2 h-2 rounded-full bg-amber-400/80"></span>
+      <span>Domain Active Thru Oct 2027</span>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="w-full max-w-5xl mx-auto px-6 py-12 sm:py-16">
+    
+    <!-- Hero Sunset Section -->
+    <section class="max-w-3xl">
+      <!-- Status Badge -->
+      <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-cyan-950/40 border border-cyan-500/25 text-cyan-300 font-mono text-xs tracking-wider uppercase mb-6">
+        <span class="relative flex h-2 w-2">
+          <span class="relative inline-flex rounded-full h-2 w-2 bg-cyan-400"></span>
+        </span>
+        OPERATIONS CONCLUDED &bull; SUNSET NOTICE
+      </div>
+
+      <!-- Hero Headline -->
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-white leading-[1.1] mb-6">
+        CodeVelo has <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-sky-400 to-indigo-400">shut down.</span>
+      </h1>
+
+      <!-- Thank You & Transition Message -->
+      <p class="text-base sm:text-lg text-slate-300 leading-relaxed mb-4">
+        Thank you to everyone who supported, tested, and collaborated with <strong class="font-semibold text-white">CodeVelo.dev LLC</strong> throughout our journey. After careful consideration, we have made the decision to conclude operations and wind down the platform.
+      </p>
+      <p class="text-sm sm:text-base text-slate-400 leading-relaxed">
+        All active applications, developer tools, and new account registrations have permanently closed. We are deeply grateful for the trust and encouragement you shared with us along the way.
+      </p>
+    </section>
+
+    <!-- Key Wind-Down Information Grid -->
+    <section aria-label="Wind-Down Details" class="grid grid-cols-1 md:grid-cols-3 gap-5 mt-12">
+      
+      <!-- Card 1: Service Status -->
+      <article class="glass-card rounded-2xl p-6 transition-colors duration-200 flex flex-col justify-between">
+        <div>
+          <div class="w-10 h-10 rounded-xl bg-rose-500/10 border border-rose-500/20 flex items-center justify-center text-rose-400 mb-4">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5.636 5.636a9 9 0 1012.728 0M12 3v9" />
+            </svg>
+          </div>
+          <h2 class="text-base font-semibold text-white mb-2">Service Status</h2>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            All active applications, APIs, web endpoints, and recurring billing schedules have been permanently discontinued and taken offline.
+          </p>
+        </div>
+        <div class="mt-5 pt-4 border-t border-slate-800/80 flex items-center justify-between font-mono text-xs text-rose-300/90">
+          <span>ENDPOINTS</span>
+          <span>100% OFFLINE</span>
+        </div>
+      </article>
+
+      <!-- Card 2: Data & Privacy -->
+      <article class="glass-card rounded-2xl p-6 transition-colors duration-200 flex flex-col justify-between">
+        <div>
+          <div class="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 mb-4">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
+            </svg>
+          </div>
+          <h2 class="text-base font-semibold text-white mb-2">Data &amp; Privacy</h2>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            In accordance with our wind-down commitments, all customer records, credentials, and application databases have been securely wiped and purged from production servers.
+          </p>
+        </div>
+        <div class="mt-5 pt-4 border-t border-slate-800/80 flex items-center justify-between font-mono text-xs text-emerald-300/90">
+          <span>USER DATA</span>
+          <span>PURGED &amp; WIPED</span>
+        </div>
+      </article>
+
+      <!-- Card 3: Domain Notice -->
+      <article class="glass-card rounded-2xl p-6 transition-colors duration-200 flex flex-col justify-between">
+        <div>
+          <div class="w-10 h-10 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 mb-4">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
+            </svg>
+          </div>
+          <h2 class="text-base font-semibold text-white mb-2">Domain Notice</h2>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            This static notice will remain published at <span class="font-mono text-slate-200">codevelo.dev</span> until the current domain registration expires in <strong class="font-medium text-slate-200">October 2027</strong>.
+          </p>
+        </div>
+        <div class="mt-5 pt-4 border-t border-slate-800/80 flex items-center justify-between font-mono text-xs text-indigo-300/90">
+          <span>EXPIRATION</span>
+          <span>OCT 2027</span>
+        </div>
+      </article>
+
+    </section>
+
+    <!-- Contact / Final Inquiries Box -->
+    <section aria-label="Final Inquiries" class="mt-10 glass-card rounded-2xl p-6 sm:p-8 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
+      <div class="max-w-xl">
+        <h2 class="text-lg font-semibold text-white mb-1.5">Final Administrative, Legal, or Billing Inquiries</h2>
+        <p class="text-sm text-slate-400 leading-relaxed">
+          If you have a lingering administrative, tax, legal, or final billing question regarding CodeVelo.dev LLC, please reach out via email.
+        </p>
+        <!-- Deployment reminder note (can be removed or kept subtle) -->
+        <p class="text-xs text-slate-500 mt-2 font-mono">
+          Note: Ensure email forwarding (e.g., Cloudflare Email Routing) is active if Google Workspace has been canceled.
+        </p>
+      </div>
+
+      <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 shrink-0">
+        <a
+          href="mailto:chris@codevelo.dev?subject=CodeVelo%20Inquiry"
+          class="inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-slate-800/90 hover:bg-slate-800 border border-slate-700/80 text-sm font-mono text-cyan-300 transition-colors"
+        >
+          <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+          </svg>
+          <span id="contact-email">chris@codevelo.dev</span>
+        </a>
+
+        <button
+          id="copy-email-btn"
+          type="button"
+          onclick="copyContactEmail()"
+          class="inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-cyan-500/15 hover:bg-cyan-500/25 active:scale-[0.99] border border-cyan-400/30 text-sm font-medium text-cyan-200 transition-all cursor-pointer"
+          aria-label="Copy contact email address"
+        >
+          <svg id="copy-icon" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 01-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 011.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 00-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 01-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 00-3.375-3.375h-1.5a1.125 1.125 0 01-1.125-1.125v-1.5a3.375 3.375 0 00-3.375-3.375H9.75" />
+          </svg>
+          <span id="copy-btn-text">Copy Email</span>
+        </button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Minimalist Footer -->
+  <footer class="w-full max-w-5xl mx-auto px-6 pb-8 pt-6 border-t border-slate-800/70 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+    <p>&copy; 2026 CodeVelo.dev LLC. All rights reserved.</p>
+    <div class="flex items-center gap-2 font-mono">
+      <span class="w-2 h-2 rounded-full bg-slate-600"></span>
+      <span>Status: Archived / Offline</span>
+    </div>
+  </footer>
+
+  <!-- Toast Notification for Copy Action -->
+  <div
+    id="toast-notification"
+    role="status"
+    aria-live="polite"
+    class="fixed bottom-6 right-6 z-50 flex items-center gap-2.5 px-4 py-3 rounded-xl bg-slate-900 border border-cyan-500/40 text-sm text-slate-100 shadow-2xl transform translate-y-16 opacity-0 pointer-events-none transition-all duration-300"
+  >
+    <svg class="w-4 h-4 text-cyan-400 shrink-0" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+    </svg>
+    <span>Copied <strong class="font-mono text-cyan-300">chris@codevelo.dev</strong> to clipboard</span>
+  </div>
+
+  <!-- Minimal Vanilla JS for Clipboard Copy & Toast Feedback -->
+  <script>
+    let toastTimeout = null;
+
+    function copyContactEmail() {
+      const emailText = document.getElementById('contact-email').textContent.trim();
+      const btnText = document.getElementById('copy-btn-text');
+      const toast = document.getElementById('toast-notification');
+
+      // Fallback-safe copy using temporary textarea + execCommand
+      const tempInput = document.createElement('textarea');
+      tempInput.value = emailText;
+      tempInput.setAttribute('readonly', '');
+      tempInput.style.position = 'absolute';
+      tempInput.style.left = '-9999px';
+      document.body.appendChild(tempInput);
+      tempInput.select();
+
+      try {
+        document.execCommand('copy');
+        btnText.textContent = 'Copied!';
+        showToast(toast);
+      } catch (err) {
+        console.error('Copy failed:', err);
+        btnText.textContent = 'Select & Copy';
+      } finally {
+        document.body.removeChild(tempInput);
+      }
+
+      setTimeout(() => {
+        btnText.textContent = 'Copy Email';
+      }, 2500);
+    }
+
+    function showToast(toastEl) {
+      if (toastTimeout) clearTimeout(toastTimeout);
+      toastEl.classList.remove('translate-y-16', 'opacity-0');
+      toastEl.classList.add('translate-y-0', 'opacity-100');
+
+      toastTimeout = setTimeout(() => {
+        toastEl.classList.remove('translate-y-0', 'opacity-100');
+        toastEl.classList.add('translate-y-16', 'opacity-0');
+      }, 3000);
+    }
+  </script>
+</body>
+</html>
